@@ -12,12 +12,12 @@
 
        $scope.displayNemeric=funtion()
        {
-         var toatlNameValue =0;
+         var toatlNameValue =calculateNeumericString($scope.name)
          $scope.totalValue = toatlNameValue;
 
        };
 
-       funtion calculateNeumericString($scope.name){
+       funtion calculateNeumericString(string){
         var toatlStringValue =0;
          toatlStringValue +=string.charCodeAt(i);
        }   
