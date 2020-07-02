@@ -2,7 +2,6 @@
     'use strict';
     angular.module('myFirstApp',[])
 
-    
 
     .controller('MyFirstAppController', function ($scope)
     {
@@ -22,8 +21,7 @@
         var toatlStringValue =0;
          toatlStringValue +=string.charCodeAt(i);
        }   
-       
-      
+    
         
     });
 
