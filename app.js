@@ -17,11 +17,11 @@
 
        };
 
-       funtion calculateNeumericString(string){
+       funtion calculateNeumericString($scope.name){
         var toatlStringValue =0;
          toatlStringValue +=string.charCodeAt(i);
        }   
-    
+     return toatlStringValue;
         
     });
 
