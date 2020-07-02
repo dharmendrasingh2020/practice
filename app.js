@@ -13,9 +13,9 @@
      function calculateNeumericString(string)
      {
       var totalNameValue =0;
-       toatlStringValue +=string.charCodeAt(i);
+       totalStringValue +=string.charCodeAt(i);
      }   
-   return toatlStringValue;
+   return totalStringValue;
       
   });
 
