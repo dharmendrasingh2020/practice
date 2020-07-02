@@ -1,20 +1,18 @@
 
-<html >
+<html ng-app="myFirstApp">
   <head>
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
     <style> body { font-size: 1.3em; }</style>
     <title>Name Calculator </title>
   </head>
-  <body ng-app="myFirstApp">
+  <body >
     <h1>Name Calculator</h1>
     <div ng-controller ="MyFirstAppController">
-      <div>
-  <input type ="text">
-        </div>
-      <div>
-          My name is:   {{totalValue}}
-        </div>
+  <input type ="text" ng-model="name"
+                      ng-keyup=displayNemeric();>
+          My name is:      {{totalValue}}
+     
 </div>
 </body>
     
