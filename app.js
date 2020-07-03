@@ -3,19 +3,23 @@
   angular.module('myFirstApp', [])
   .controller('MyFirstAppController', function ($scope)
   {
-     $scope.name="";
-     $scope.totalValue= 0;
-     $scope.displayNemeric = funtion ()
+     $scope.name = "";
+     $scope.totalValue = 0;
+     $scope.displayNemeric = function ()
      {
        var totalNameValue = calculateNeumericString($scope.name);
        $scope.totalValue = totalNameValue;
      };
      function calculateNeumericString(string)
      {
-      var totalNameValue =0;
-       totalStringValue +=string.charCodeAt(i);
+      var totalStringValue = 0;
+      for(var i=0;i < string.length;i++){
+      
+      
+       totalStringValue += string.charCodeAt(i);
      }   
    return totalStringValue;
+    }
       
   });
 
